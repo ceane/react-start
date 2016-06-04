@@ -22,7 +22,7 @@ module.exports = {
     loaders: [
       {
         test: /\.(js|jsx)?$/,
-        include: path.resolve('client'),
+        include: path.resolve('packages'),
         loader: 'babel'
       }
     ]

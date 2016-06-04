@@ -12,6 +12,9 @@
     ["module-alias", [{
       "src": "npm:@reactivex/rxjs/dist/cjs",
       "expose": "rx"
+    }, {
+      "src": "./packages/rs-react-containers",
+      "expose": "rs-react-containers"
     }]]
   ],
   "env": {
@@ -31,4 +34,3 @@
     "__tests__"
   ]
 }
-~
