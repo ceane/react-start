@@ -15,9 +15,6 @@ module.exports = {
     sourceMapFilename: '[file].map'
   },
   cache: true,
-  plugins: [
-
-  ],
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
