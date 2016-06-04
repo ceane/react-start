@@ -3,11 +3,7 @@
   "version": "0.0.1",
   "description": "react workshop",
   "scripts": {
-<<<<<<< HEAD
-    "start": "export NODE_ENV=development&& webpack --progress --config scripts/webpack.config.js"
-=======
     "start": "export NODE_ENV=development|| set NODE_ENV=development&& webpack --progress --config scripts/webpack.config.js"
->>>>>>> upstream/master
   },
   "dependencies": {
     "babel-core": "^6.9.1",
@@ -25,26 +21,17 @@
     "babel-regenerator-runtime": "^6.5.0",
     "babel-register": "^6.9.0",
     "express": "^4.12.4",
-<<<<<<< HEAD
-    "react": "*",
-    "react-addons-perf": "^15.1.0",
-    "react-dom": "^15.1.0",
     "react-router": "^2.4.1",
-=======
     "open": "0.0.5",
     "react": "*",
     "react-addons-perf": "^15.1.0",
     "react-dom": "^15.1.0",
->>>>>>> upstream/master
     "redux": "^3.5.2",
     "redux-devtools": "^3.3.1",
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.0.11",
     "redux-slider-monitor": "^1.0.5",
-<<<<<<< HEAD
-=======
     "serve-static": "^1.10.3",
->>>>>>> upstream/master
     "webpack": "^2.1.0-beta.8",
     "webpack-dev-server": "^1.14.1",
     "webpack-hot-middleware": "^2.10.0"
@@ -59,10 +46,6 @@
   },
   "engines": {
     "node": "6.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://hyperdev.com/#!/project/welcome-project"
   },
   "keywords": [
     "node",
