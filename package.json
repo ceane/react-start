@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"description": "react workshop",
 	"scripts": {
-		"start": "export NODE_ENV=development&& webpack --progress --config scripts/webpack.config.js"
+		"start": "export NODE_ENV=development|| set NODE_ENV=development&& webpack --progress --config scripts/webpack.config.js"
 	},
 	"dependencies": {
 		"babel-core": "^6.9.1",
