@@ -1,0 +1,34 @@
+{
+  "presets": [
+    "es2015-webpack",
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-inline-environment-variables",
+    "transform-class-properties",
+    "transform-export-extensions",
+    "transform-flow-strip-types",
+    ["module-alias", [{
+      "src": "npm:@reactivex/rxjs/dist/cjs",
+      "expose": "rx"
+    }]]
+  ],
+  "env": {
+    "test": {
+      "auxiliaryCommentBefore": "istanbul ignore next"
+    },
+    "production": {
+      "plugins": [
+        "transform-react-inline-elements",
+        "transform-react-constant-elements"
+      ]
+    }
+  },
+  "ignore": [
+    "node_modules",
+    "test",
+    "__tests__"
+  ]
+}
+~
