@@ -1,10 +1,9 @@
 {
-	"name": "my-hyperdev-app",
+	"name": "react-start",
 	"version": "0.0.1",
-	"description": "What am I about?",
-	"main": "server.js",
+	"description": "react workshop",
 	"scripts": {
-		"start": "node server.js"
+		"start": "export NODE_ENV=development&& webpack --progress --config scripts/webpack.config.js"
 	},
 	"dependencies": {
 		"babel-core": "^6.9.1",
