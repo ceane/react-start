@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "react workshop",
   "scripts": {
-    "start": "export NODE_ENV=development&& webpack --progress --config scripts/webpack.config.js"
+    "start": "export NODE_ENV=development|| set NODE_ENV=development&& webpack --progress --config scripts/webpack.config.js"
   },
   "dependencies": {
     "babel-core": "^6.9.1",
@@ -30,6 +30,7 @@
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.0.11",
     "redux-slider-monitor": "^1.0.5",
+    "serve-static": "^1.10.3",
     "webpack": "^2.1.0-beta.8",
     "webpack-dev-server": "^1.14.1",
     "webpack-hot-middleware": "^2.10.0"
