@@ -7,7 +7,6 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Link to='main'>To Main</Link>
         <Header />
         {this.props.children}
         <Footer />
