@@ -2,10 +2,14 @@ const path = require('path');
 const express = require('express');
 const open = require('open');
 const serveStatic = require('serve-static');
+const webpack = require('webpack');
+const devServer = require('webpack-dev-server');
 
 const app = express();
 const staticPath = path.resolve('packages/rs-static');
+const compiledFPath = path.resolve('dist');
 
+app.use(serveStatic(compiledFPath));
 app.use(serveStatic(staticPath));
 
 app.listen(3000, () => {
