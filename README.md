@@ -1,14 +1,17 @@
 # react-start
 
-After forking the repo and cloning the repo, then:
+Read the [guidelines for contributing](.github/CONTRIBUTING.md) before getting started.
+
+## Getting Started
+
+After checking out
 
 ```
-git remote add upstream https://github.com/ceane/react-start.git
+npm i
+npm start
 ```
 
-When updating...
+Then go to `http://localhost:3000/dist`
 
-```
-git fetch upstream
-git merge upstream/master
-```
+
+
