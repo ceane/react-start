@@ -13,5 +13,6 @@ npm start
 
 Then go to `http://localhost:3000/dist`
 
+## Discuss
 
-
+Check out the react-start channel on the [slack team](https://learnstuffs.slack.com)
