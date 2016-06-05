@@ -7,8 +7,6 @@
   "plugins": [
     "transform-inline-environment-variables",
     "transform-class-properties",
-    "transform-export-extensions",
-    "transform-flow-strip-types",
     ["module-alias", [{
       "src": "npm:@reactivex/rxjs/dist/cjs",
       "expose": "rx"
