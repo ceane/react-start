@@ -2,9 +2,13 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry: [
-    './packages/index'
-  ],
+  entry: {
+    index: [
+      'webpack-dev-server/client?http://0.0.0.0:3000',
+      'webpack/hot/only-dev-server',
+      './packages/index'
+    ]
+  },
   output: {
     path: path.resolve('./dist'),
     publicPath: '/',
@@ -23,8 +27,11 @@ module.exports = {
       {
         test: /\.(js|jsx)?$/,
         include: path.resolve('packages'),
-        loader: 'babel'
+        loaders: ['react-hot', 'babel']
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };
