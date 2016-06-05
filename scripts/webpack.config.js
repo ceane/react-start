@@ -1,5 +1,11 @@
 const webpack = require('webpack');
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
+  template: path.resolve('packages/rs-static/index.html'),
+  filename: 'index.html',
+  inject: 'body'
+});
 
 module.exports = {
   entry: {
@@ -31,7 +37,9 @@ module.exports = {
       }
     ]
   },
+  devtool: process.env.NODE_ENV != 'production' ? 'eval' : 'source-map',
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    HtmlWebpackPluginConfig
   ]
 };
